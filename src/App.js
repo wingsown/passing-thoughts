@@ -1,14 +1,15 @@
 import './App.css';
+import { AddThoughtForm } from './AddThoughtForm'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <h1>Passing Thoughts</h1>
       </header>
 
       <main>
-        form
+        <AddThoughtForm />
       </main>
     </div>
   );
