@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { generateId, getNewExpirationTime } from './Utilities';
 
 export function AddThoughtForm(props) {
     const [text, setText] = useState('');
@@ -12,9 +13,9 @@ export function AddThoughtForm(props) {
         event.preventDefault();
 
         const thought = {
-            id: 'generateId_function',
+            id: generateId(),
             text: text,
-            expiresAt: 'getNewExpirationDate_function'
+            expiresAt: getNewExpirationTime()
         }
     }
 
