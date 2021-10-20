@@ -20,7 +20,11 @@ function App() {
       </header>
 
       <main>
-        <AddThoughtForm />
+        <AddThoughtForm
+         addThought = {addThought}/>
+         <ul className="thoughts">
+           
+         </ul>
       </main>
     </div>
   );
