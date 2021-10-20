@@ -1,7 +1,18 @@
+import React, { useState} from 'react';
 import './App.css';
 import { AddThoughtForm } from './AddThoughtForm'
 
 function App() {
+  const [thought, setThought] = useState([{}]);
+
+  const addThought = (thought) => {
+    setThought(prev => [thought, ...prev]);
+  }
+
+  const removeThought = (thoughtIdToRemove) => {
+    setThought(prev => prev.filter(thought => (thought.id !== thoughtIdToRemove)));
+  }
+
   return (
     <div className="App">
       <header>

@@ -17,6 +17,7 @@ export function AddThoughtForm(props) {
             text: text,
             expiresAt: getNewExpirationTime()
         }
+
     }
 
     return (
