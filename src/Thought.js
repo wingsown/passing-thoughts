@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 export function Thought(props) {
     const {thought, removeThought} = props;
