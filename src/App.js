@@ -1,17 +1,17 @@
 import React, { useState} from 'react';
 import './App.css';
 import { AddThoughtForm } from './AddThoughtForm';
-import { Thought } from '.Thought';
+import { Thought } from './Thought';
 
 function App() {
-  const [thought, setThought] = useState([{}]);
+  const [thoughts, setThoughts] = useState([{}]);
 
   const addThought = (thought) => {
-    setThought(prev => [thought, ...prev]);
+    setThoughts(prev => [thought, ...prev]);
   }
 
   const removeThought = (thoughtIdToRemove) => {
-    setThought(prev => prev.filter(thought => (thought.id !== thoughtIdToRemove)));
+    setThoughts(prev => prev.filter(thought => (thought.id !== thoughtIdToRemove)));
   }
 
   return (
