@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 import './App.css';
 import { AddThoughtForm } from './AddThoughtForm';
 import { Thought } from './Thought';
+import { generateId, getNewExpirationTime } from './Utilities';
 
 function App() {
   const [thoughts, setThoughts] = useState([{}]);
