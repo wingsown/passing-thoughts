@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import './App.css';
-import { AddThoughtForm } from './AddThoughtForm'
+import { AddThoughtForm } from './AddThoughtForm';
+import { Thought } from '.Thought';
 
 function App() {
   const [thought, setThought] = useState([{}]);
@@ -23,7 +24,12 @@ function App() {
         <AddThoughtForm
          addThought = {addThought}/>
          <ul className="thoughts">
-           
+           {thoughts.map((thought) => (
+           <Thought 
+           key={thought.id}
+           thought={thought}
+           removeThought={removeThought}/>
+           ))}
          </ul>
       </main>
     </div>
