@@ -25,3 +25,19 @@
   flex-grow: 1;
   margin-right: 0.5rem;
 }
+
+.thoughts {
+  list-style: none;
+  padding: 0;
+}
+.Thought {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  background-color: #404040;
+}
+
+.Thought .remove-button {
+  font-size: 80%;
+  float: right;
+}
