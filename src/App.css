@@ -42,4 +42,11 @@
   float: right;
   border: 0;
   border-radius: 3px;
+  background: transparent;
+  color: #fff;
+}
+
+.Thought .remove-button:hover {
+  color: #eee;
+  background-color: #191919;
 }
