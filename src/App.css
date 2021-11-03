@@ -16,7 +16,7 @@
 }
 
 .AddThoughtForm input {
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   border: 1px solid #666;
   border-radius: 3px;
 }
@@ -24,6 +24,14 @@
 .AddThoughtForm input[type='text'] {
   flex-grow: 1;
   margin-right: 0.5rem;
+}
+
+.AddThoughtForm input[type='submit'] {
+  cursor: pointer;
+  background-color: #262626;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .20);
+  padding: 1rem;
 }
 
 .thoughts {
